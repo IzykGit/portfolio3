@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import { ThemeContext } from "../contexts/ThemeContext"
-import { useContext } from "react"
+import { useContext, useState } from "react"
 
 
 
@@ -9,14 +9,16 @@ const HeroComponent = () => {
     const { theme } = useContext(ThemeContext)
 
     const name = "Lance-Hemphill"
+    const subText = "Software-Engineer-based-in-Columbus,-OH"
     const nameArr = name.split("")
+    const subTextArr = subText.split("")
 
     const randomNameAnimation = () => {
         const randomX = Math.random() * (300 - (-300) + 1) + (-300);
         const randomY = Math.random() * (300 - (-300) + 1) + (-300);
 
         const mainDuration = 0.3;
-        const randomDelayMain = Math.random() * (0.5 - (0.3) + 1) + (0.3)
+        const randomDelayMain = Math.random() * (1 - (0.3) + 1) + (0.3)
 
         const randomDelayOpacity = Math.random() * (1 - (randomDelayMain + mainDuration) + 1) + (randomDelayMain + mainDuration)
 
@@ -30,18 +32,26 @@ const HeroComponent = () => {
     }
 
 
+
     return (
         <>
             <section className={`${theme === "dark" ? "text-white" : "text-black"} flex-col h-fit`}>
                 <div className="flex mb-2">
                     {nameArr.map((letter, i) => (
-                        <motion.p animate={randomNameAnimation} key={i} className='text-6xl font-bold'>{letter === "-" ? "\u00A0" : letter}</motion.p>
+                        <motion.p
+                            animate={randomNameAnimation} key={i}
+                            className='text-6xl font-bold'>{letter === "-" ? "\u00A0" : letter}
+                        </motion.p>
                     ))}
-
                 </div>
 
-                <div>
-                    <motion.p className="font-semibold">Software Engineer based in Columbus, OH</motion.p>
+                <div className="flex">
+                    {subTextArr.map((letter, i) => (
+                        <motion.p
+                            animate={randomNameAnimation} key={i}
+                            className='font-semibold'>{letter === "-" ? "\u00A0" : letter}
+                        </motion.p>
+                    ))}
                 </div>
 
             </section>
