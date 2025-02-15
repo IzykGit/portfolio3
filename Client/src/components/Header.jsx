@@ -11,13 +11,13 @@ const Header = () => {
     rotate: "180deg",
     width: 400,
     height: "80%",
-    transition: { duration: 0.4, ease: "easeInOut", width: { delay: 0.4 }, height: { delay: 0.4 }, repeatType: "reverse" }
+    transition: { duration: 0.3, ease: "easeInOut", width: { delay: 0.4 }, height: { delay: 0.4 }, repeatType: "reverse" }
   }
 
   const rotateAndCollapse = {
     rotate: "0deg",
     width: 64,
-    transition: { duration: 0.4, ease: "easeInOut", rotate: { delay: 0.4, duration: 0.4 } }
+    transition: { duration: 0.3, ease: "easeInOut", rotate: { delay: 0.3, duration: 0.4 } }
   };
 
 

@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
-import { ParticlesContext } from "./ParticlesContext";
 import { motion } from "framer-motion";
 
 
-const ParticlesProvider = ({ children }) => {
+const Particles = () => {
     const [particles, setParticles] = useState([])
 
     const generateColor = () => {
@@ -53,7 +52,6 @@ const ParticlesProvider = ({ children }) => {
     }, []);
 
     return (
-        <ParticlesContext.Provider value={{ particles, setParticles }}>
             <div className="absolute z-0 overflow-hidden w-screen h-screen">
                 {particles.map((particle) => (
                     <motion.div key={particle.id}
@@ -69,9 +67,7 @@ const ParticlesProvider = ({ children }) => {
                     </motion.div>
                 ))}
             </div>
-            {children}
-        </ParticlesContext.Provider>
     )
 }
 
-export default ParticlesProvider;
+export default Particles;
