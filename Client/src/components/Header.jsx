@@ -16,7 +16,7 @@ const Header = () => {
 
   const rotateAndCollapse = {
     rotate: "0deg",
-    width: 64,
+    width: 48,
     transition: { duration: 0.3, ease: "easeInOut", rotate: { delay: 0.3, duration: 0.4 } }
   };
 
@@ -31,7 +31,7 @@ const Header = () => {
       variants={{ rotateAndExpand, rotateAndCollapse }}
       animate={expanded ? "rotateAndExpand" : "rotateAndCollapse"}
       onClick={headerClicked}
-      className={`border-2 ${theme === "dark" ? "bg-white" : "bg-black"} w-16 h-16 top-6 right-6 absolute rounded-xl cursor-pointer`} 
+      className={`border-2 ${theme === "dark" ? "bg-white" : "bg-black"} w-12 h-12 top-6 right-6 absolute rounded-xl cursor-pointer`} 
       >
     </motion.header>
   )
