@@ -22,7 +22,7 @@ const ParticlesProvider = ({ children }) => {
         const randomXEnd = Math.random() * (window.innerWidth + 1)
         const randomYEnd = Math.random() * (window.innerHeight + 1)
 
-        const randomDuration = Math.random() * (40 - 20) + 20;
+        const randomDuration = Math.random() * (30 - 15) + 15;
 
         return {
             x: [randomXStart, randomXEnd],
@@ -33,7 +33,7 @@ const ParticlesProvider = ({ children }) => {
     }
 
     const generateRandomParticleSize = () => {
-        return Math.floor(Math.random() * 50) + 5
+        return Math.floor(Math.random() * (80 - 20)) + 20
     }
 
 
