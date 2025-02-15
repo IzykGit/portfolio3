@@ -56,7 +56,9 @@ const ParticlesProvider = ({ children }) => {
         <ParticlesContext.Provider value={{ particles, setParticles }}>
             <div className="absolute z-0 overflow-hidden w-screen h-screen">
                 {particles.map((particle) => (
-                    <motion.div key={particle.id} animate={particle.animation}
+                    <motion.div key={particle.id}
+                        initial={{ opacity: 0 }}
+                        animate={particle.animation}
                         className={`rounded-full`}
                         style={{
                             width: `${particle.size}px`,
