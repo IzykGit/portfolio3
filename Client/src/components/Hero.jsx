@@ -8,8 +8,8 @@ const HeroComponent = () => {
 
     const name = "Lance Hemphill"
     const subText = "Software Engineer based in Columbus, OH"
-    const nameArr = name.split("")
-    const subTextArr = subText.split("")
+    const nameArr = name.split(" ")
+    const subTextArr = subText.split(" ")
 
     const links = [
         {
@@ -29,22 +29,32 @@ const HeroComponent = () => {
     return (
         <section className={`${theme === "dark" ? "text-white" : "text-black"} flex flex-col gap-4 h-fit w-full mx-auto`}>
             <div className="flex flex-wrap">
-                {nameArr.map((letter, i) => (
-                    <motion.p
-                        animate={generateRandomAnimation} key={i}
-                        className="text-5xl md:text-7xl font-bold">
-                        {letter === " " ? "\u00A0" : letter}
-                    </motion.p>
+                {nameArr.map((word, i) => (
+                    <div key={`word${i}`} className="flex">
+                        {word.split("").map((letter, i) => (
+                            <motion.p
+                                animate={generateRandomAnimation} key={`letter${i}`}
+                                className="text-5xl md:text-7xl font-bold">
+                                {letter === " " ? "\u00A0" : letter}
+                            </motion.p>
+                        ))}
+                        <span className="w-2" />
+                    </div>
                 ))}
             </div>
 
             <div className="flex flex-wrap">
-                {subTextArr.map((letter, i) => (
-                    <motion.p
-                        animate={generateRandomAnimation} key={i}
-                        className="font-semibold text-lg md:text-xl">
-                        {letter === " " ? "\u00A0" : letter}
-                    </motion.p>
+                {subTextArr.map((word, i) => (
+                    <div key={`word${i}`} className="flex">
+                        {word.split("").map((letter, i) => (
+                            <motion.p
+                                animate={generateRandomAnimation} key={`letter${i}`}
+                                className="font-semibold text-lg md:text-xl">
+                                {letter === " " ? "\u00A0" : letter}
+                            </motion.p>
+                        ))}
+                        <span className="w-2" />
+                    </div>
                 ))}
             </div>
 
