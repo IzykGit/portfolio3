@@ -76,7 +76,7 @@ const Technologies = () => {
     const techHeadingArr = techHeading.split("")
 
     return (
-        <section className='text-white flex flex-col gap-4 w-[42rem]'>
+        <section className='text-white flex flex-col gap-4'>
             <div className='flex'>
                 {techHeadingArr.map((letter, i) => (
                     <motion.p

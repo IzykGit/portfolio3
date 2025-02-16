@@ -12,7 +12,7 @@ const About = () => {
 
 
     return (
-        <section className='text-white flex flex-col gap-4 w-[42rem]'>
+        <section className='text-white flex flex-col gap-4'>
             <div className='flex'>
                 {aboutHeadingArr.map((letter, i) => (
                     <motion.p

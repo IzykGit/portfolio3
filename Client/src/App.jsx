@@ -10,7 +10,7 @@ const App = () => {
       <ThemeProvider>
       <ParticlesOne />
       <ParticlesTwo />
-      <div className='max-w-7xl mx-auto z-10 relative py-22 px-16'>
+      <div className='max-w-5xl mx-auto z-10 relative py-22 px-16'>
         <BrowserRouter>
           <Routes>
             <Route path='/' element={<Home />} />

@@ -7,7 +7,7 @@ const Home = () => {
 
 
     return (
-        <main className='min-h-screen flex flex-col gap-6'>
+        <main className='min-h-screen flex flex-col gap-6 items-center'>
             <HeroComponent />
             <About />
             <Technologies />

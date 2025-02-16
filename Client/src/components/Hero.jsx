@@ -3,10 +3,7 @@ import { ThemeContext } from "../contexts/ThemeContext"
 import { useContext } from "react"
 import { generateRandomAnimation } from "../functions/Animations"
 
-
-
 const HeroComponent = () => {
-
     const { theme } = useContext(ThemeContext)
 
     const name = "Lance Hemphill"
@@ -29,46 +26,43 @@ const HeroComponent = () => {
         }
     ]
 
-
-
     return (
-        <>
-            <section className={`${theme === "dark" ? "text-white" : "text-black"} flex flex-col gap-4 h-fit`}>
-                <div className="flex">
-                    {nameArr.map((letter, i) => (
-                        <motion.p
-                            animate={generateRandomAnimation} key={i}
-                            className='text-7xl font-bold'>{letter === " " ? "\u00A0" : letter}
-                        </motion.p>
-                    ))}
-                </div>
+        <section className={`${theme === "dark" ? "text-white" : "text-black"} flex flex-col gap-4 h-fit w-full mx-auto`}>
+            <div className="flex flex-wrap">
+                {nameArr.map((letter, i) => (
+                    <motion.p
+                        animate={generateRandomAnimation} key={i}
+                        className="text-5xl md:text-7xl font-bold">
+                        {letter === " " ? "\u00A0" : letter}
+                    </motion.p>
+                ))}
+            </div>
 
-                <div className="flex">
-                    {subTextArr.map((letter, i) => (
-                        <motion.p
-                            animate={generateRandomAnimation} key={i}
-                            className='font-semibold text-xl'>{letter === " " ? "\u00A0" : letter}
-                        </motion.p>
-                    ))}
-                </div>
+            <div className="flex flex-wrap">
+                {subTextArr.map((letter, i) => (
+                    <motion.p
+                        animate={generateRandomAnimation} key={i}
+                        className="font-semibold text-lg md:text-xl">
+                        {letter === " " ? "\u00A0" : letter}
+                    </motion.p>
+                ))}
+            </div>
 
-
-                <div className="flex gap-4">
-                    {links.map((link, i) => (
-                        <motion.a
-                            href={link.link}
-                            target="_blank"
-                            aria-label={link.text}
-                            animate={generateRandomAnimation} key={i}
-                            class="backdrop-blur-lg bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border transition duration-200 border-blue-500 hover:border-transparent rounded"
-                        >
-                            {link.text}
-                        </motion.a>
-                    ))}
-                </div>
-
-            </section>
-        </>
+            <div className="flex flex-wrap gap-4">
+                {links.map((link, i) => (
+                    <motion.a
+                        href={link.link}
+                        target="_blank"
+                        aria-label={link.text}
+                        animate={generateRandomAnimation}
+                        key={i}
+                        className="backdrop-blur-lg bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border transition duration-200 border-blue-500 hover:border-transparent rounded text-sm md:text-base"
+                    >
+                        {link.text}
+                    </motion.a>
+                ))}
+            </div>
+        </section>
     )
 }
 
