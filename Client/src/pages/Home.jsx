@@ -1,14 +1,16 @@
 import About from "../components/About"
 import HeroComponent from "../components/Hero"
+import Technologies from "../components/Technologies"
 
 
 const Home = () => {
 
 
     return (
-        <main className='min-h-screen py-26 flex flex-col gap-12'>
+        <main className='min-h-screen flex flex-col gap-6'>
             <HeroComponent />
             <About />
+            <Technologies />
         </main>
     )
 }

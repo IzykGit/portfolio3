@@ -1,4 +1,4 @@
-export const randomNameAnimation = () => {
+export const generateRandomAnimation = () => {
     const randomX = Math.random() * (300 - (-300) + 1) + (-300);
     const randomY = Math.random() * (300 - (-300) + 1) + (-300);
 

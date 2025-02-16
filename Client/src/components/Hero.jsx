@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
 import { ThemeContext } from "../contexts/ThemeContext"
 import { useContext } from "react"
-import { randomNameAnimation } from "../functions/Animations"
+import { generateRandomAnimation } from "../functions/Animations"
 
 
 
@@ -37,7 +37,7 @@ const HeroComponent = () => {
                 <div className="flex">
                     {nameArr.map((letter, i) => (
                         <motion.p
-                            animate={randomNameAnimation} key={i}
+                            animate={generateRandomAnimation} key={i}
                             className='text-7xl font-bold'>{letter === " " ? "\u00A0" : letter}
                         </motion.p>
                     ))}
@@ -46,21 +46,21 @@ const HeroComponent = () => {
                 <div className="flex">
                     {subTextArr.map((letter, i) => (
                         <motion.p
-                            animate={randomNameAnimation} key={i}
+                            animate={generateRandomAnimation} key={i}
                             className='font-semibold text-xl'>{letter === " " ? "\u00A0" : letter}
                         </motion.p>
                     ))}
                 </div>
 
 
-                <div className="flex gap-6">
+                <div className="flex gap-4">
                     {links.map((link, i) => (
                         <motion.a
                             href={link.link}
                             target="_blank"
                             aria-label={link.text}
-                            animate={randomNameAnimation} key={i}
-                            className='text-sm cursor-pointer hover:scale-[1.1] trasnition duration-200 bg-[#024D84] rounded-sm p-2 w-22 flex justify-center'
+                            animate={generateRandomAnimation} key={i}
+                            class="backdrop-blur-lg bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border transition duration-200 border-blue-500 hover:border-transparent rounded"
                         >
                             {link.text}
                         </motion.a>

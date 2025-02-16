@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { randomNameAnimation } from '../functions/Animations'
+import { generateRandomAnimation } from '../functions/Animations'
 
 const About = () => {
 
@@ -12,11 +12,11 @@ const About = () => {
 
 
     return (
-        <section className='text-white flex flex-col gap-4 w-92'>
+        <section className='text-white flex flex-col gap-4 w-[42rem]'>
             <div className='flex'>
                 {aboutHeadingArr.map((letter, i) => (
                     <motion.p
-                        animate={randomNameAnimation} key={i}
+                        animate={generateRandomAnimation} key={i}
                         className='text-3xl font-bold'>{letter === " " ? "\u00A0" : letter}
                     </motion.p>
                 ))}
@@ -27,7 +27,7 @@ const About = () => {
                     <div key={wordIndex} className="flex">
                         {word.split("").map((letter, letterIndex) => (
                             <motion.p
-                                animate={randomNameAnimation} 
+                                animate={generateRandomAnimation} 
                                 key={`${wordIndex}-${letterIndex}`}
                                 className='text-xl'
                             >
