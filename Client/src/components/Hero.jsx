@@ -22,7 +22,7 @@ const HeroComponent = () => {
         },
         {
             text: "Resume",
-            link: "../../public/data/Lance Hemphill.pdf"
+            link: "../../public/LanceHemphill.pdf"
         }
     ]
 
