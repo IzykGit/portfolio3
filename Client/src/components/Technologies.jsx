@@ -89,7 +89,7 @@ const Technologies = () => {
             <div className="flex flex-wrap gap-4">
                 {technologies.map((tech, i) => (
                     <motion.a key={i}
-                        class="backdrop-blur-lg bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border transition duration-200 border-blue-500 hover:border-transparent rounded"
+                        class="backdrop-blur-lg bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border transition duration-200 border-blue-500 hover:border-transparent"
                         target="_blank" href={tech.link}
                         aria-label={tech.text}
                         animate={generateRandomAnimation}>{tech.text}</motion.a>

@@ -5,6 +5,10 @@ import ParticlesOne from "./components/aesthetics/ParticlesOne"
 import ParticlesTwo from "./components/aesthetics/ParticlesTwo"
 
 const App = () => {
+
+
+
+  
   return (
     <>
       <ThemeProvider>

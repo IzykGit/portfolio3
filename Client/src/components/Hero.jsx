@@ -66,7 +66,7 @@ const HeroComponent = () => {
                         aria-label={link.text}
                         animate={generateRandomAnimation}
                         key={i}
-                        className="backdrop-blur-lg bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border transition duration-200 border-blue-500 hover:border-transparent rounded text-sm md:text-base"
+                        className="backdrop-blur-lg bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border transition duration-200 border-blue-500 hover:border-transparent text-sm md:text-base"
                     >
                         {link.text}
                     </motion.a>

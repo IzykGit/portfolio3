@@ -8,8 +8,6 @@ const About = () => {
     const aboutHeadingArr = aboutHeading.split("")
     const aboutTextArr = aboutText.split(" ")
 
-    console.log(aboutTextArr)
-
 
     return (
         <section className='text-white flex flex-col gap-4'>
