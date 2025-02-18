@@ -24,16 +24,8 @@
                     "text": "Developed a Flask backend in VSCode, designing RESTful APIs to integrate seamlessly with the React frontend for full-stack functionality."
                 },
                 {
-                    "id": 5,
-                    "text": "Deployed the Flask backend to PythonAnywhere for testing and production, streamlining the deployment process and ensuring reliable uptime."
-                },
-                {
                     "id": 6,
                     "text": "Integrated AWS DynamoDB as the primary NoSQL database, enabling efficient data storage and retrieval for the application."
-                },
-                {
-                    "id": 7,
-                    "text": "Collaborated with a cross-functional team to architect system design, define API endpoints, and refine feature implementation strategies."
                 }
             ]
         }
