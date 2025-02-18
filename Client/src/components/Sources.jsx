@@ -57,10 +57,10 @@ const Sources = () => {
 
     useEffect(() => {
         const getData = async () => {
-            const experience = await fetch('../../public/data/Experience.json');
+            const experience = await fetch('/data/Experience.json');
             const expData = await experience.json()
 
-            const projects = await fetch('../../public/data/Projects.json')
+            const projects = await fetch('/data/Projects.json')
             const proData = await projects.json()
 
 
