@@ -8,7 +8,7 @@ const Home = () => {
 
 
     return (
-        <main className='min-h-screen flex flex-col gap-6 items-center'>
+        <main className='min-h-screen flex flex-col gap-6 items-center text-white'>
             <HeroComponent />
             <About />
             <Sources />

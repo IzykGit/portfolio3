@@ -10,7 +10,7 @@ const About = () => {
 
 
     return (
-        <section className='text-white flex flex-col gap-4'>
+        <section className='flex flex-col gap-4'>
             <div className='flex'>
                 {aboutHeadingArr.map((letter, i) => (
                     <motion.p

@@ -26,7 +26,7 @@ const ParticlesTwo = () => {
         return {
             x: [randomXStart, randomXEnd],
             y: [randomYStart, randomYEnd],
-            opacity: [0, 1, 0],
+            opacity: [0, 0.9, 0],
             transition: { duration: randomDuration, ease: "easeInOut", repeat: Infinity }
         };
     }

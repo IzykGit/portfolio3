@@ -11,7 +11,7 @@ export const generateRandomAnimation = () => {
     return {
         x: [randomX, 0],
         y: [randomY, 0],
-        opacity: [1, 0, 1],
+        // opacity: [1, 0, 1],
         transition: { delay: randomDelayMain, duration: mainDuration, ease: "easeIn", opacity: { duration: 0.2, delay: opacityDelay } }
     }
 }

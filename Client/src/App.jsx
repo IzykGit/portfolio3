@@ -7,7 +7,6 @@ import ParticlesTwo from "./components/aesthetics/ParticlesTwo"
 const App = () => {
 
 
-
   
   return (
     <>
