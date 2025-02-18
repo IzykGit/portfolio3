@@ -82,7 +82,7 @@ const Sources = () => {
                     value={"Experience"}
                     onClick={(e) => handleOpenSet(e.target.value)}>
                     Experience
-                    <motion.div className="w-2 h-2 bg-green-400 rounded-full hidden absolute right-4" animate={(isOpen && isOpen.value === "Experience") ? selectedAnimation : {}}></motion.div>
+                    <motion.div className="w-1 h-1 sm:w-2 sm:h-2 bg-green-400 rounded-full hidden absolute right-2" animate={(isOpen && isOpen.value === "Experience") ? selectedAnimation : {}}></motion.div>
                 </motion.button>
 
                 <motion.button
@@ -93,7 +93,7 @@ const Sources = () => {
                     value={"Projects"}
                     onClick={(e) => handleOpenSet(e.target.value)}>
                     Projects
-                    <motion.div className="w-2 h-2 bg-green-400 rounded-full hidden absolute right-4" animate={(isOpen && isOpen.value === "Projects") ? selectedAnimation : {}}></motion.div>
+                    <motion.div className="w-1 h-1 sm:w-2 sm:h-2 bg-green-400 rounded-full hidden absolute right-2" animate={(isOpen && isOpen.value === "Projects") ? selectedAnimation : {}}></motion.div>
                 </motion.button>
             </div>
             <motion.div className="border-white w-full h-fit pt-8 pb-4 sm:px-8" variants={expandingVariants} initial={false} animate={isOpen.open ? "expandAnimation" : "collapseAnimation"}>

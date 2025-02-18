@@ -1,6 +1,6 @@
 export const generateRandomAnimation = () => {
-    const randomX = Math.random() * (300 - (-300) + 1) + (-300);
-    const randomY = Math.random() * (300 - (-300) + 1) + (-300);
+    const randomX = Math.random() * (350 - (-350) + 1) + (-350);
+    const randomY = Math.random() * (350 - (-350) + 1) + (-350);
 
     const mainDuration = 0.3;
     const randomDelayMain = Math.random() * (1.5 - (0.5) + 1) + (0.5)

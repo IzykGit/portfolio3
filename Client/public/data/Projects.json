@@ -11,7 +11,7 @@
         {
             "id": 2,
             "name": "Multistep Form",
-            "src": "multistep.png",
+            "src": "../assets/multistep.png",
             "link": "https://multistep-form-black.vercel.app/",
             "code": "https://github.com/IzykGit/multistep-form"
         },
@@ -19,8 +19,8 @@
             "id": 3,
             "name": "Portfolio V2",
             "src": "../assets/Screenshot_2025-02-17_23-01-00.png",
-            "link": "https://portfolio-eosin-five-60.vercel.app/",
-            "code": "https://github.com/IzykGit/Portfolio"
+            "link": "https://portfolio2-delta-ashen.vercel.app/",
+            "code": "https://github.com/IzykGit/portfolio2"
         }
     ]
 }
